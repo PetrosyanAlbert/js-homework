@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+
+  <p id="Text">Это абзац, который можно скрыть или показать.</p>
+  <button id="Button">Переключить видимость</button>
+
+  <script>
+    document.getElementById("Button").addEventListener("click", function() {
+      const paragraph = document.getElementById("Text");
+      
+      // Проверяем текущее значение display
+      if (paragraph.style.display === "none") {
+        paragraph.style.display = "block"; // Показываем
+      } else {
+        paragraph.style.display = "none";  // Скрываем
+      }
+    });
+  </script>
+
+</body>
+</html>
