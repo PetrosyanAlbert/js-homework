@@ -6,6 +6,6 @@ function countProperties(obj){
     return count;
 }
 let obj = {name: "John"};
-let obj2 = Object.create(obj);
+let obj2 = new Object(obj);
 obj2.age = 4;
 console.log(countProperties(obj2));

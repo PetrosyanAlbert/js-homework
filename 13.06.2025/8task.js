@@ -10,4 +10,4 @@ Car.prototype.getDescription = function () {
 
 const car = new Car("Toyota", "Corolla", 2020)
 
-console.log(car.getDescription())
+console.log(car.getDescription());

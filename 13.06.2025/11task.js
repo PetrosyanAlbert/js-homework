@@ -1,5 +1,6 @@
 function shallowMerge(...obj){
-    return Object.assign({}, ...obj);
+    let res = {};
+    return Object.assign(res, ...obj);
 }
 
 let obj1 = { a: 1, b: 2 };
