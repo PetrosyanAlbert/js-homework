@@ -1,0 +1,27 @@
+let obj = {
+    arr: [10, 20, 30],
+    i : 0,
+    [Symbol.iterator]() {
+        return {
+            next: () => {
+                if(this.i < this.arr.length) {
+                    return{value: this.arr[this.i++], done: false};
+                } else {
+                    return {value: undefined, done: true};
+                }
+            }
+        }
+    },
+    reset(){
+        this.i = 0;
+    }
+    
+}
+for(const value of obj){
+    console.log(value);
+}
+obj.reset();
+
+for(const value of obj){
+    console.log(value);
+}
