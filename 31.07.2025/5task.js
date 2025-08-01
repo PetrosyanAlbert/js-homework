@@ -29,7 +29,7 @@ class EmailService extends MessageService {
 }
 class MessageSender {
   constructor(service) {
-    this.service = service; // Абстракция внедряется извне
+    this.service = service;
   }
 
   sendMessage(message) {
