@@ -19,4 +19,4 @@ for (const val of obj) {
   console.log(val);
 }
 
-console.log([...obj]);
+// console.log([...obj]);

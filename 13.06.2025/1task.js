@@ -3,7 +3,7 @@ let person1 = {
 };
 let person2 = {
     name: "Alice",
-    //surname: "James",
+    surname: "James",
     age: 34
 };
 let mergedPerson = Object.assign(person1, person2);

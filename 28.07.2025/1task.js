@@ -8,3 +8,4 @@ obj[sym1] = 'Value sym1';
 // console.log(Object.keys(obj));
 
 console.log(Object.getOwnPropertySymbols(obj));
+
