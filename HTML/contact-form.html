@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Связаться с нами</h1>
+        <fieldset>
+            <legend>Личная информация</legend>
+
+            <div class="form-group">
+                <label for="name">Имя <span class="required-star">*</span></label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Электронная почта <span class="required-star">*</span></label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Телефон</label>
+                <input type="tel" id="phone" name="phone" pattern="\+?[0-9\s\-]+" placeholder="+7 900 000-00-00">
+            </div>
+
+            <div class="form-group">
+                <label for="birthdate">Дата рождения</label>
+                <input type="date" id="birthdate" name="birthdate">
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Обратная связь</legend>
+            <div class="form-group">
+            <label for="topic">Тема обращения</label>
+              <select id="topic" name="topic" required>
+                <option value="">-- Выберите тему --</option>
+                    <option value="support">Техническая поддержка</option>
+                    <option value="feedback">Обратная связь</option>
+                    <option value="other">Другое</option>
+              </select>
+            </div>
+             <div class="form-group">
+                <label for="message">Сообщение <span class="required-star">*</span></label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+        </fieldset>
+        <fieldset>
+            <legend>Предпочтения</legend>
+
+            <div class="form-group">
+                <span>Предпочитаемый способ связи:</span>
+                <div class="radio-group">
+                    <label><input type="radio" name="contact_method" value="email" checked> Эл. почта</label>
+                    <label><input type="radio" name="contact_method" value="phone"> Телефон</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" name="subscribe" value="yes">
+                    Подписаться на новости
+                </label>
+            </div>
+        </fieldset>
+
+        <div class="form-group">
+            <button type="submit">Отправить</button>
+        </div>
+</body>
+</html>

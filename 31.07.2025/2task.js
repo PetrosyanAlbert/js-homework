@@ -15,5 +15,3 @@ class PayPalPayment extends PaymentMethod {
     console.log(`Paid ${amount} with PayPal.`);
   }
 }
-
-

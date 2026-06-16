@@ -17,3 +17,6 @@ let col = Color.BLUE;
 
 console.log(getColorName(col));
 console.log(getColorName(Symbol("BLUE")));
+
+
+structuredClone

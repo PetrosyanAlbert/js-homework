@@ -64,16 +64,16 @@ function renderArea(shape) {
 const rectangle = new Rectangle(5, 10);
 renderArea(rectangle); 
 
-const square = new Square(5);
-renderArea(square);    
+// const square = new Square(5);
+// renderArea(square);    
 
-const circle = new Circle(7);
-renderArea(circle);    
+// const circle = new Circle(7);
+// renderArea(circle);    
 
 
-rectangle.setWidth(7);
-rectangle.setHeight(8);
-renderArea(rectangle); 
+// rectangle.setWidth(7);
+// rectangle.setHeight(8);
+// renderArea(rectangle); 
 
-circle.setRadius(10);
-renderArea(circle);   
+// circle.setRadius(10);
+// renderArea(circle);   

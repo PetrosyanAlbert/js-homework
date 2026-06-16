@@ -19,4 +19,12 @@ for (const val of obj) {
   console.log(val);
 }
 
-// console.log([...obj]);
+
+let iterator = obj[Symbol.iterator]();
+
+console.log(iterator.next()); 
+console.log(iterator.next()); 
+console.log(iterator.next()); 
+console.log(iterator.next()); 
+
+// // console.log([...obj]);

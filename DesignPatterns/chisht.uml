@@ -1,0 +1,32 @@
+          +--------------------+
+          |     <<interface>>  |
+          |      ICoffee       |
+          +--------------------+
+          | + cost(): number   |
+          | + description(): string |
+          +--------------------+
+                   ▲
+                   |
+          +--------------------+
+          |    BasicCoffee     |
+          +--------------------+
+          | + cost(): number   |
+          | + description(): string |
+          +--------------------+
+                   ▲
+                   |
+          +--------------------+
+          | CoffeeDecorator    |  (abstract)
+          +--------------------+
+          | - coffee: ICoffee  |
+          | + cost(): number   |
+          | + description(): string |
+          +--------------------+
+              ▲        ▲                          ▲
+              |        |                          |
+   +----------------+  +----------------+  +----------------+
+   | MilkDecorator  |  | SugarDecorator |  | CaramelDecorator |
+   +----------------+  +----------------+  +----------------+
+   | + cost()       |  | + cost()       |  | + cost()        |
+   | + description()|  | + description()|  | + description() |
+   +----------------+  +----------------+  +----------------+

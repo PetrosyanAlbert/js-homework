@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>Настройки моего профиля</h1>
+   <form>
+        <fieldset>
+           <div class="form-group">
+        <label for="user-id">Ваш уникальный ID:</label>
+        <input class="form-input" type="text" id="user-id" name="user-id" value="ID-98765" readonly>
+    </div>
+
+    <div class="form-group">
+        <label for="full-name">Ваше имя:</label>
+        <input class="form-input" type="text" id="full-name" name="full-name" placeholder="Введите ваше полное имя" required autofocus>
+    </div>
+    
+    <div class="form-group">
+        <label for="email">Электронная почта:</label>
+        <input class="form-input" type="email" id="email" name="email" placeholder="example@mail.com" required>
+    </div>
+
+    <div class="form-group">
+        <label for="password">Новый пароль:</label>
+        <input class="form-input" type="password" id="password" name="password" placeholder="Минимум 8 символов" required minlength="8">
+    </div>
+
+    <div class="form-group">
+        <label for="birth-date">Дата рождения:</label>
+        <input class="form-input" type="date" id="birth-date" name="birth-date">
+    </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Дополнительная информация</legend>
+
+        <div class="form-group">
+            <label for="country">Ваша страна:</label>
+            <select class="form-input" id="country" name="country">
+            <option value="">Выберите страну</option>
+            <option value="">Россия</option>
+            <option value="">Узбекистан</option>
+            <option value="">Таджикистан</option>
+            </select>    
+        </div>
+        <div class="form-group">
+            <label for="about">Расскажите о себе:</label>
+            <textarea class="form-input" id="about" name="about" rows="5" placeholder="Напишите несколько предложений о ваших увлечениях..." maxlength="500"></textarea>
+        </div>
+    </fieldset>
+    <fieldset>
+    <legend>Настройки и предпочтения</legend>
+
+    <div class="form-group">
+        <label>Как часто присылать уведомления?</label>
+        <div>
+            <input type="radio" id="notify-daily" name="notification_frequency" value="daily">
+            <label for="notify-daily">Ежедневно</label>
+        </div>
+        <div>
+            <input type="radio" id="notify-weekly" name="notification_frequency" value="weekly" checked>
+            <label for="notify-weekly">Раз в неделю</label>
+        </div>
+        <div>
+            <input type="radio" id="notify-never" name="notification_frequency" value="never">
+            <label for="notify-never">Никогда</label>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>Какие темы вам интересны?</label>
+        <div>
+            <input type="checkbox" id="interest-tech" name="interests" value="tech">
+            <label for="interest-tech">Технологии</label>
+        </div>
+        <div>
+            <input type="checkbox" id="interest-art" name="interests" value="art">
+            <label for="interest-art">Искусство</label>
+        </div>
+        <div>
+            <input type="checkbox" id="interest-sport" name="interests" value="sport">
+            <label for="interest-sport">Спорт</label>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="volume">Громкость уведомлений:</label>
+        <input class="form-input" type="range" id="volume" name="volume" min="0" max="100" value="50">
+    </div>
+
+    <div class="form-group">
+        <label for="profile-color">Цвет вашего профиля:</label>
+        <input type="color" id="profile-color" name="profile-color" value="#3498db">
+    </div>
+
+</fieldset>
+
+   </form>
+</body>
+</html>
